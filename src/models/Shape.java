@@ -46,6 +46,7 @@ public class Shape {
         if (size < 2) return 0;
 
         double max = 0;
+
         for (int i = 0; i < size; i++) {
             double dist = points[i].distance(points[(i + 1) % size]);
             if (dist > max) {
